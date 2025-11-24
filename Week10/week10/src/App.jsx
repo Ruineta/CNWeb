@@ -11,13 +11,13 @@ const ITEMS_PER_PAGE = 5;
 export default function App(){
     const [users, setUsers] = useState([]);
     const [filteredUsers, setFilteredUsers] = useState([]);
-    const [loading, setLoading] = useState([])
-    const [error, setError] = useState([]);
+    const [loading, setLoading] = useState(false)
+    const [error, setError] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
-    const [currentPage, setCurrentPage] = useState([]);
-    const [showModal, setShowModal] = useState([]);
-    const [modalMode, setModalMode] = useState([])
-    const [editingUser, setEditingUser] = useState([])
+    const [currentPage, setCurrentPage] = useState(1);
+    const [showModal, setShowModal] = useState(false);
+    const [modalMode, setModalMode] = useState('create')
+    const [editingUser, setEditingUser] = useState(null)
 
     //Fetch users on mount
     useEffect(() => {
