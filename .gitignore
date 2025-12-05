@@ -3,3 +3,5 @@ CNWeb.code-workspace
 CNWeb.code-workspace
 CNWeb.code-workspace
 *.code-workspace
+/Week12/back_end/node_modules
+/Week12/front_end/node_modules
